@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="btn">
+        <button onclick="myFunction()">Thema</button>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form action="/" autocomplete="off" onsubmit="onForSubmit()">
+                    <div>
+                        <label for="id">Id...</label>
+                        <input type="number" name="id" id="id" required min="1">
+                    </div>
+                    <div>
+                        <label for="userId">userId</label>
+                        <input type="number" name="userId" id="userId" required min="1">
+                    </div>
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" required minlength="2">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>Id:</th>
+                            <th>UserId:</th>
+                            <th>Title:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            </td>
+        </tr>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
